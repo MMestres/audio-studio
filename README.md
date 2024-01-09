@@ -1,6 +1,8 @@
-# Proyecto con next, react, typescript y tailwind.
+# Audio Studio
 
 ![studio](https://github.com/MMestres/audio-studio/assets/951469/5b0d9d2b-1654-49ff-8ab2-029550495fa7)
+
+Proyecto con NextJS, React, TypeScript y TailwindCSS.
 
 Demo: [https://audio-studio.vercel.app/](https://audio-studio.vercel.app/)
 
