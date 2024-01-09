@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  background-color: black;
+  color-scheme: dark;
+  color: white;
+}
+
+#app {
+  display: grid;
+  grid-template-areas:
+    "aside"
+    "main"
+    "player";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+@media (min-width: 768px) {
+  #app.public {
+    display: grid;
+    grid-template-areas:
+      "aside main main"
+      "player player player";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #app.dashboard {
+    display: grid;
+    grid-template-areas:
+      "aside main main"
+      "player player player";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr auto;
+  }
+}
+
+.map {
+  filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+        
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: black;
+  border: none;
+  box-shadow: none;
+}
+        
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgb(113 113 122);
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgb(24, 24, 27);
+  }
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 2px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(244, 244, 245);
+  cursor: pointer;
+  border: 1px solid rgb(244, 244, 245);
+  box-shadow: -407px 0 0 410px rgb(244, 244, 245);
+}
