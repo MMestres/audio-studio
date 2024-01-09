@@ -1,11 +1,6 @@
 Proyecto con next, react, typescript y tailwind.
 
-## Demo
-
-Projecto público
-
-[Live (Provisional)](https://studio-opal-iota.vercel.app/)
-
+![studio](https://github.com/MMestres/audio-studio/assets/951469/5b0d9d2b-1654-49ff-8ab2-029550495fa7)
 
 ## Para levantar el proyecto en local
 
